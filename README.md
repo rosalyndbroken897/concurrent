@@ -5,12 +5,18 @@ A modern take on structured concurrency in Go.
 ## Motivation
 
 Go provides excellent low-level concurrency primitives (goroutines,
-channels, sync package), but composing them into higher-level patterns—fan-out
-pipelines, bounded worker pools, ordered result collection—requires repetitive
-boilerplate and careful coordination.
+channels, sync package), but composing them into higher-level patterns such as
+fan-out pipelines, bounded worker pools, ordered result collection—requires
+repetitive boilerplate and careful coordination. Furthermore, applying limits to
+avoid unbounded resource utilization due to spawning too many goroutines is a
+tedious task that often gets overlooked and only breaks when the code is shipped
+to production. Spawning goroutines also introduces reliability challenges, such
+as dealing with panics unwinding to the start of a goroutines and terminating the
+entire program, which is rarely the desirable behavior in server applications that
+Go is often used for.
 
 The `concurrent` package provides a small set of composable building blocks
-that handle goroutine lifecycle, ordering, error propagation, and panic safety.
+that handle goroutine lifecycle, ordering, error handling, and panic propagation.
 All concurrent operations respect a context-based concurrency limit, making it
 easy to control resource usage across an entire call tree.
 
