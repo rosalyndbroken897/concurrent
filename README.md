@@ -1,6 +1,6 @@
 # concurrent [![Go Reference](https://pkg.go.dev/badge/github.com/firetiger-oss/concurrent.svg)](https://pkg.go.dev/github.com/firetiger-oss/concurrent)
 
-Structured concurrency primitives for Go, built on iterators.
+A modern take on structured concurrency in Go.
 
 ## Motivation
 
