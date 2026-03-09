@@ -51,9 +51,11 @@ results as an iterator, `RunTasks` for functions that have side-effects but
 don't return any errors.
 
 ```go
-for result, err := range concurrent.Run(ctx, urls, func(ctx context.Context, url string) (Response, error) {
-    return http.Get(url)
-}) {
+for result, err := range concurrent.Run(ctx, urls,
+    func(ctx context.Context, url string) (Result, error) {
+        ...
+    },
+) {
     ...
 }
 ```
