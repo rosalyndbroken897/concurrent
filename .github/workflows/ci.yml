@@ -8,18 +8,8 @@ on:
 
 jobs:
 
-  build:
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ ubuntu, macos ]
-        include:
-          - os: ubuntu
-            runner: blacksmith-8vcpu-ubuntu-2204
-          - os: macos
-            runner: macos-latest
-
-    runs-on: ${{ matrix.runner }}
+  test:
+    runs-on: blacksmith-8vcpu-ubuntu-2204
 
     steps:
       - uses: actions/checkout@v4
