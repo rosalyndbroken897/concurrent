@@ -1,4 +1,4 @@
-# concurrent [![Go Reference](https://pkg.go.dev/badge/github.com/firetiger-oss/concurrent.svg)](https://pkg.go.dev/github.com/firetiger-oss/concurrent)
+# concurrent [![CI](https://github.com/firetiger-oss/concurrent/actions/workflows/ci.yml/badge.svg)](https://github.com/firetiger-oss/concurrent/actions/workflows/ci.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/firetiger-oss/concurrent.svg)](https://pkg.go.dev/github.com/firetiger-oss/concurrent)
 
 A modern take on structured concurrency in Go.
 

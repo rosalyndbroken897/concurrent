@@ -1,6 +1,3 @@
-// Package concurrent provides thread-safe job queue implementations for concurrent processing.
-// It supports generic job types and provides mechanisms for controlling concurrency,
-// capacity limits, and graceful shutdown.
 package concurrent
 
 import (
