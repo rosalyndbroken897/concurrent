@@ -1,4 +1,4 @@
-# concurrent [![Go Reference](https://pkg.go.dev/badge/github.com/firetiger-oss/concurrent.svg)](https://pkg.go.dev/github.com/firetiger-oss/concurrent)
+# concurrent [![CI](https://github.com/firetiger-oss/concurrent/actions/workflows/ci.yml/badge.svg)](https://github.com/firetiger-oss/concurrent/actions/workflows/ci.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/firetiger-oss/concurrent.svg)](https://pkg.go.dev/github.com/firetiger-oss/concurrent)
 
 A modern take on structured concurrency in Go.
 
@@ -19,7 +19,7 @@ naturally with the standard library and range loops.
 
 ## Usage
 
-### Concurrency limits
+### [concurrent.WithLimit](https://pkg.go.dev/github.com/firetiger-oss/concurrent#WithLimit)
 
 Control parallelism via context. The limit propagates through the call tree and
 can only be decreased, never increased.
@@ -28,7 +28,7 @@ can only be decreased, never increased.
 ctx := concurrent.WithLimit(ctx, 4) // at most 4 concurrent operations
 ```
 
-### Pipeline
+### [concurrent.Pipeline](https://pkg.go.dev/github.com/firetiger-oss/concurrent#Pipeline)
 
 The core primitive — use when you have an `iter.Seq2` stream and a transform
 function. All other APIs are convenience wrappers built on top of Pipeline.
@@ -44,7 +44,7 @@ for out, err := range results {
 }
 ```
 
-### Run / RunTasks
+### [concurrent.Run](https://pkg.go.dev/github.com/firetiger-oss/concurrent#Run) / [concurrent.RunTasks](https://pkg.go.dev/github.com/firetiger-oss/concurrent#RunTasks)
 
 Convenience wrappers for when your input is a `[]T` slice. `Run` collects
 results as an iterator, `RunTasks` for functions that have side-effects but
@@ -65,7 +65,7 @@ err := concurrent.RunTasks(ctx, items, func(ctx context.Context, item Item) erro
 })
 ```
 
-### Exec / Query
+### [concurrent.Exec](https://pkg.go.dev/github.com/firetiger-oss/concurrent#Exec) / [concurrent.Query](https://pkg.go.dev/github.com/firetiger-oss/concurrent#Query)
 
 Use when you have a small, fixed set of independent functions rather than a
 homogeneous slice. `Exec` for error-only tasks, `Query` when each task returns
@@ -84,7 +84,7 @@ for result, err := range concurrent.Query(ctx, query1, query2) {
 }
 ```
 
-### Queue / Process
+### [concurrent.Queue](https://pkg.go.dev/github.com/firetiger-oss/concurrent#Queue) / [concurrent.Process](https://pkg.go.dev/github.com/firetiger-oss/concurrent#Process)
 
 Use for producer-consumer patterns where jobs arrive dynamically over time
 rather than being known upfront.
