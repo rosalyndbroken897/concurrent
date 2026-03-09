@@ -4,8 +4,8 @@ Structured concurrency primitives for Go, built on iterators.
 
 ## Motivation
 
-Go provides excellent low-level concurrency primitives (`goroutines`,
-`channels`, `sync`), but composing them into higher-level patterns—fan-out
+Go provides excellent low-level concurrency primitives (goroutines,
+channels, sync package), but composing them into higher-level patterns—fan-out
 pipelines, bounded worker pools, ordered result collection—requires repetitive
 boilerplate and careful coordination.
 
